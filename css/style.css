@@ -8,11 +8,11 @@ html,body,h1,h2,h3,h4,h5,h6,p {
 h1,h2,h3,h4,h5,h6{
   font-size: 1em;
   font-weight: normal; 
-  
 }
 /*레이아웃*/
 .wrapper{
-  background-color: silver;
+
+  background: url(images/bg_flower.png)  no-repeat 50% 0, linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%) repeat 0 0 ;
   height:100vh; 
 }
 .header, .visual, .main-content, .slogan , .footer{
@@ -20,23 +20,46 @@ h1,h2,h3,h4,h5,h6{
   margin: 0 auto; 
  }
  .header{ 
-   background-color: gray;
-   height:10vh;
+   height:115px;
+   background-color: #ffffff;
+   border-radius: 0 0 15px 15px;
 }
  .visual{
-  background-color: lime;
-  height:10vh; 
+
+  height:100px; 
  }
  .main-content{
-  background-color: yellowgreen;
+   min-height:400px;
+   background-color: #fff;
+   border-radius:15px 15px 0 0;
+   box-sizing: border-box;
   height:60vh; 
+  padding : 30px;
+  display : flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ }
+ .group{
+ }
+ .group1{
+  width:250px;
+  height:100px;
+  align-self: flex-start;
+ }
+ .group2{
+   width: 390px;
+ }
+ .group3{
+   width:190px;
  }
  .slogan{
-  background-color: skyblue;
+  
   height:10vh; 
  }
+ .footer-bg{
+   background: linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%);
+ }
  .footer{
-  background-color: black;
   height:10vh; 
  }
 

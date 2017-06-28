@@ -1,103 +1,127 @@
 @charset "utf-8";
+
 /*web폰트 선언*/
+
 @font-face {
     font-family: 'Noto Sans Regular';
     font-style: normal;
     font-weight: 400;
-    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
-    url('font/eot/NotoSansKR-Regular-Hestia.eot'),
-    url('font/eot/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
-    url('font/woff/NotoSansKR-Regular-Hestia.woff') format('woff'),
-    url('font/otf/NotoSansKR-Regular-Hestia.otf') format('opentype');
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'), url('font/eot/NotoSansKR-Regular-Hestia.eot'), url('font/eot/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'), url('font/woff/NotoSansKR-Regular-Hestia.woff') format('woff'), url('font/otf/NotoSansKR-Regular-Hestia.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Noto Sans Bold';
     font-style: normal;
     font-weight: 700;
-    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
-    url('font/eot/NotoSansKR-Bold-Hestia.eot'),
-    url('font/eot/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
-    url('font/woff/NotoSansKR-Bold-Hestia.woff') format('woff'),
-    url('font/otf/NotoSansKR-Bold-Hestia.otf') format('opentype');
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('font/eot/NotoSansKR-Bold-Hestia.eot'), url('font/eot/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'), url('font/woff/NotoSansKR-Bold-Hestia.woff') format('woff'), url('font/otf/NotoSansKR-Bold-Hestia.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'webcafeIcon';
-    font-weight:400;
+    font-weight: 400;
     src: url('font/webcafeIcon.eot');
-    src: url('font/webcafeIcon.eot?#iefix') format('embedded-opentype'),
-         url('font/webcafeIcon.woff') format('woff'),
-         url('font/webcafeIcon.ttf') format('truetype'),
-         url('font/webcafeIcon.svg#webcaferegular') format('svg');
+    src: url('font/webcafeIcon.eot?#iefix') format('embedded-opentype'), url('font/webcafeIcon.woff') format('woff'), url('font/webcafeIcon.ttf') format('truetype'), url('font/webcafeIcon.svg#webcaferegular') format('svg');
 }
+
 `
 /*요소의 여백 초기화*/
-html,body,h1,h2,h3,h4,h5,h6,p {
-  margin:0;
-  padding: 0;
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
 }
+
+
 /*제목크기 초기화*/
-h1,h2,h3,h4,h5,h6{
-  font-size: 1em;
-  font-weight: normal; 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    font-weight: normal;
 }
+
+
 /*기본스타일*/
-body{
-   font-family: 'Noto Sans Regular',serif;
-   
+
+body {
+    font-family: 'Noto Sans Regular', serif;
 }
+
+
 /*레이아웃*/
-.wrapper{
 
-  background: url(images/bg_flower.png)  no-repeat 50% 0, linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%) repeat 0 0 ;
-  height:100vh; 
-  
+.wrapper {
+    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%) repeat 0 0;
+    height: 100vh;
 }
-.header, .visual, .main-content, .slogan , .footer{
-  width :940px;
-  margin: 0 auto; 
- }
- .header{ 
-   height:115px;
-   background-color: #ffffff;
-   border-radius: 0 0 15px 15px;
+
+.header,
+.visual,
+.main-content,
+.slogan,
+.footer {
+    width: 940px;
+    margin: 0 auto;
 }
- .visual{
 
-  height:100px; 
- }
- .main-content{
-   min-height:400px;
-   background-color: #fff;
-   border-radius:15px 15px 0 0;
-   box-sizing: border-box;
-  height:60vh; 
-  padding : 30px;
-  display : flex;
-  justify-content: space-between;
-  align-items: flex-start;
- }
- .group{
- }
- .group1{
-  width:250px;
-  height:100px;
-  align-self: flex-start;
- }
- .group2{
-   width: 390px;
- }
- .group3{
-   width:190px;
- }
- .slogan{
-  
-  height:10vh; 
- }
- .footer-bg{
-   background: linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%);
- }
- .footer{
-  height:10vh; 
- }
+.header {
+    height: 115px;
+    background-color: #ffffff;
+    border-radius: 0 0 15px 15px;
+}
 
+.visual {
+    height: 100px;
+}
+
+.main-content {
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    box-sizing: border-box;
+    height: 60vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.group {}
+
+.group1 {
+    width: 250px;
+    height: 100px;
+    align-self: flex-start;
+}
+
+.group2 {
+    width: 390px;
+}
+
+.group3 {
+    width: 190px;
+}
+
+.slogan {
+    height: 10vh;
+}
+
+.footer-bg {
+    background: linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%);
+}
+
+.footer {
+    height: 10vh;
+}

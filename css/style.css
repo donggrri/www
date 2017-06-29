@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*web폰트 선언*/
+/* 웹폰트 선언 */
 
 @font-face {
     font-family: 'Noto Sans Regular';
@@ -23,8 +23,8 @@
     src: url('font/webcafeIcon.eot?#iefix') format('embedded-opentype'), url('font/webcafeIcon.woff') format('woff'), url('font/webcafeIcon.ttf') format('truetype'), url('font/webcafeIcon.svg#webcaferegular') format('svg');
 }
 
-`
-/*요소의 여백 초기화*/
+
+/* 요소의 여백 초기화 */
 
 html,
 body,
@@ -42,7 +42,7 @@ li {
 }
 
 
-/*제목크기 초기화*/
+/* 제목크기 초기화 */
 
 h1,
 h2,
@@ -55,22 +55,22 @@ h6 {
 }
 
 
-/*기본스타일*/
+/* 기본 스타일 */
 
 html {
     font-size: 10px;
 }
 
 body {
-    font-family: 'Noto Sans Regular', serif;
+    font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
 }
 
 
-/*레이아웃*/
+/* 레이아웃 */
 
 .wrapper {
-    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%) repeat 0 0;
+    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
     height: 100vh;
 }
 
@@ -81,6 +81,7 @@ body {
 .footer {
     width: 940px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -96,7 +97,7 @@ a {
 
 .header {
     min-height: 115px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 0 0 15px 15px;
     position: relative;
     padding: 0 30px;
@@ -107,17 +108,16 @@ a {
 
 .logo {
     position: absolute;
-    top: 54px;
+    top: 50px;
     left: 60px;
 }
 
 
-/*텍스트 링크- 안내 링크 */
+/* 텍스트링크 - 안내링크 */
 
 .info-menu {
-    background-color: pink;
     list-style-type: none;
-    font-size: 0px;
+    font-size: 0;
     text-align: right;
     position: relative;
     right: -10px;
@@ -133,6 +133,10 @@ a {
     text-transform: uppercase;
 }
 
+.info-menu a {
+    padding: 10px;
+}
+
 .info-menu li::after {
     content: ":";
 }
@@ -141,12 +145,8 @@ a {
     content: "";
 }
 
-.info-menu a {
-    padding: 10px 10px;
-}
 
-
-/*메인메뉴*/
+/* 메인 메뉴 */
 
 .main-menu {
     background: linear-gradient(to bottom, #e5892d 0%, #e0652c 35%, #e0652c 65%, #e5892d 100%);
@@ -159,21 +159,66 @@ a {
 
 .main-menu>li {
     float: left;
+    position: relative;
 }
 
 .main-menu>li>a {
     font-size: 1.6rem;
-    font-family: "noto sans bold";
-    color: rgba(255, 255, 255, 0.9);
-    padding: 10px 21px 10px 20px;
+    font-family: "Noto Sans Bold";
+    color: rgba(255, 255, 255, 0.95);
     display: block;
+    padding: 0 20px;
+    line-height: 45px;
     border-left: 2px solid rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
+}
+
+.main-menu>li>a:hover {
+    /*color: hsla(45, 80%, 80%, 1);*/
+    color: #ff0;
+}
+
+.main-menu>li>a:hover::after {
+    content: "";
+    display: block;
+    border-top: 2px solid #181818;
 }
 
 .main-menu ul {
     list-style-type: none;
-    background-color: lime;
+    background: lime;
     position: absolute;
+    white-space: nowrap;
+    top: 47px;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.about-html {
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.about-css {
+    display: none;
+}
+
+.web-standards {
+    display: none;
+}
+
+.web-accessibility {
+    display: none;
+}
+
+.qna {
+    display: none;
+}
+
+.archive {
     display: none;
 }
 
@@ -182,27 +227,25 @@ a {
 }
 
 .main-content {
-    min-height: 400px;
     background-color: #fff;
     border-radius: 15px 15px 0 0;
-    box-sizing: border-box;
-    height: 60vh;
+    min-height: 400px;
     padding: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
 }
 
 .group {}
 
 .group1 {
     width: 250px;
-    height: 100px;
-    align-self: flex-start;
+    /*align-self: flex-end;*/
 }
 
 .group2 {
-    width: 390px;
+    width: 380px;
 }
 
 .group3 {
@@ -214,7 +257,7 @@ a {
 }
 
 .footer-bg {
-    background: linear-gradient(to bottom, #a8caba 0%, #aaaaaa 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .footer {

@@ -1,4 +1,4 @@
-@charset "utf-8";
+Skip to content This repository Pull requests Issues Marketplace Gist @donggrri 1 0 0 seulbi/www Code Issues 0 Pull requests 0 Projects 0 Wiki www/css/style.css d4f31d3 3 minutes ago @seulbi seulbi 플로트와 박스모델 익히기 277 lines (216 sloc) 4.55 KB @charset "utf-8";
 
 /* 웹폰트 선언 */
 
@@ -96,11 +96,11 @@ a {
 /* 헤더 */
 
 .header {
-    min-height: 115px;
+    /*min-height: 115px;*/
     background-color: #fff;
     border-radius: 0 0 15px 15px;
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 40px 30px;
 }
 
 
@@ -162,7 +162,7 @@ a {
     position: relative;
 }
 
-.main-menu>li>a {
+.main-menu>li>span {
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     color: rgba(255, 255, 255, 0.95);
@@ -173,12 +173,15 @@ a {
     text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
 }
 
-.main-menu>li>a:hover {
+.main-menu>li>span:hover,
+.main-menu span:focus {
     /*color: hsla(45, 80%, 80%, 1);*/
     color: #ff0;
+    outline=0;
 }
 
-.main-menu>li>a:hover::after {
+.main-menu>li>span:hover::after,
+.main-menu span:focus::after {
     content: "";
     display: block;
     border-top: 2px solid #181818;
@@ -186,7 +189,6 @@ a {
 
 .main-menu ul {
     list-style-type: none;
-    background: lime;
     position: absolute;
     white-space: nowrap;
     top: 47px;
@@ -196,30 +198,52 @@ a {
     display: inline-block;
 }
 
-.about-html {
+.main-menu ul a::before {
+    font-family: "webcafeIcon";
+    content: "r";
+    position: relative;
+    top: 2px;
+}
+
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before {
+    content: "c";
+}
+
+.main-menu ul a {
+    padding: 8px 15px 7px 0;
     display: block;
+}
+
+.about-html {
+    display: none;
     top: 0;
     left: 0;
 }
 
 .about-css {
     display: none;
+    left: 0;
 }
 
 .web-standards {
     display: none;
+    left: 0;
 }
 
 .web-accessibility {
     display: none;
+    left: -140px;
 }
 
 .qna {
     display: none;
+    left: -170px;
 }
 
 .archive {
     display: none;
+    right: -25px;
 }
 
 .visual {

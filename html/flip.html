@@ -48,17 +48,25 @@
 <body>
     <div class="container">
         <div id="card">
-            <div class="front">1</div>
-            <div class="back">2</div>
+            <img class="front" src="http://mylko72.maru.net/jquerylab/study/back.jpg" alt="">
+            <img class="back" src="http://mylko72.maru.net/jquerylab/study/q-hearts.jpg" alt="">
+
         </div>
     </div>
+    <button class="btn">Click Me!</button>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
         $(function() {
-            $(function() {
-                $("#card").click(function() {
-                    $(this).toggleClass("flipped");
-                });
+            $("#card").click(function() {
+                $(this).toggleClass("flipped");
+            })
+        });
+
+
+
+        $(function() {
+            $(".btn").on("click", function() {
+                $("#card").toggleClass("flipped");
             });
         });
     </script>

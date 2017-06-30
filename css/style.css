@@ -24,6 +24,14 @@ Skip to content This repository Pull requests Issues Marketplace Gist @donggrri 
 }
 
 
+/* 숨김 콘텐츠*/
+
+legend {
+    position: absolute;
+    left: -200px;
+}
+
+
 /* 요소의 여백 초기화 */
 
 html,
@@ -337,8 +345,6 @@ a {
     /*align-items: flex-start;*/
 }
 
-.group {}
-
 .group1 {
     width: 250px;
     /*align-self: flex-end;*/
@@ -350,6 +356,77 @@ a {
 
 .group3 {
     width: 190px;
+}
+
+
+/* 로그인 */
+
+.login {
+    background: radial-gradient(circle at right top, #e5892d, #e0652c);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.login-heading {
+    font-family: "Noto Sans Bold", sans-serif;
+    font-size: 1.6rem;
+    color: #ff0;
+    text-indent: 10px;
+}
+
+.login-form {
+    padding: 10px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.login-form fieldset {
+    border-bottom: 1px solid #aaa;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.user-pw {
+    background: lime;
+    margin-top: 5px;
+}
+
+.btn-login {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    top: 0;
+    right: 0;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.login-form label {
+    display: inline-block;
+    width: 5em;
+    background: yellow;
+}
+
+.login-form input {
+    box-sizing: border-box;
+    width: 99px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 5px;
+}
+
+.member {
+    display: flex;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0 5px 10px 10px;
 }
 
 .slogan {

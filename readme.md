@@ -35,7 +35,7 @@
 |  점수  | 100 |  100|      |      |   |
 |      |      |      |      |      |   |
 ******------------
-<img src="https://www.huement.com/web/wp-content/uploads/2013/10/logo-1.jpg" width="150px">      
+<img src="https://www.huement.com/web/wp-content/uploads/2013/10/logo-1.jpg" width="150px" height="100px">      
 
 이것은 ~~마크다운~~ **문법** 입니다.
 

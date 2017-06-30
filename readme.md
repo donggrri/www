@@ -2,3 +2,38 @@
 ## 프론트엔드 기술
 ### HTML
 > html이란 ...
+1. html tag
+2. head tag
+3. body tag
+
+### css
++ 안녕
+  + 하시오
+     + csss
+     - asdasd
+
+
+
+[github 계정]
+(http:s//github.com/donggrri/)
+
+
+
+오늘은 날씨가          맑은편입니다.
+
+
+```javascript
+        
+        .box::after {
+            content: "null";
+            background: lime;
+            display: block;
+            clear: both;
+        }
+        
+        
+```
+| 구분 | 영어 | 수학 | 사회 | 과학 |   |
+|------|------|------|------|------|--:|
+|   점수   | 100     |      100|      |      |   |
+|      |      |      |      |      |   |

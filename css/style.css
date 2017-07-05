@@ -29,7 +29,7 @@
 
 legend,
 .validation-heading,
-.term-heading {
+{
     position: absolute;
     left: -9999em;
 }
@@ -75,6 +75,7 @@ html {
 body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
+    line-height: 1.15;
 }
 
 
@@ -119,7 +120,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 60px;
 }
 
@@ -478,27 +479,60 @@ a {
     background: url("images/validation_icon.png") no-repeat 20px 50%, linear-gradient(to bottom, #eee, #ccc);
 }
 
-.term {}
-
-.term-list {
-    list-style-type: none;
-    background: url("images/webcafe_video_logo.png") no-repeat 20px 50%, linear-gradient(to bottom, #aaa, #ccc);
-    padding: 20px;
+.term {
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #eee, #ccc);
     border-radius: 10px;
+    border: 1px solid #aaa;
 }
 
-.term-list-subject {
-    font-size: 1.8rem;
-    font-family: 'Noto Sans Regular', sans-serif;
+.term-list {}
+
+.term-list::after {
+    content: "";
+    display: block;
+    clear: both;
 }
+
+.term-list-subject {}
 
 .term-list-thumbnail {
-    color: darkcyan;
-    padding-left: 100px;
+    float: left;
 }
 
 .term-list-brief {
-    padding-left: 100px;
+    margin-top: 5px !important;
+}
+
+.term-heading {
+    font-size: 1.6rem;
+    font-family: "noto sans bold";
+    list-style-type: none;
+}
+
+.term-list-subject,
+.term-list-brief {
+    width: 145px;
+    float: right;
+}
+
+.term-list-thumbnail,
+.term-list-brief {
+    margin: 0;
+}
+
+.term-list.even {
+    background: red;
+}
+
+.even .term-list-subject,
+.even .term-list-brief {
+    float: left;
+}
+
+.even .term-list-thumbnail {
+    float: right;
 }
 
 

@@ -1,4 +1,5 @@
-Skip to content This repository Pull requests Issues Marketplace Gist @donggrri 1 0 0 seulbi/www Code Issues 0 Pull requests 0 Projects 0 Wiki www/css/style.css d4f31d3 3 minutes ago @seulbi seulbi 플로트와 박스모델 익히기 277 lines (216 sloc) 4.55 KB @charset "utf-8";
+@charset "utf-8";
+@import 'fontello.css';
 
 /* 웹폰트 선언 */
 
@@ -362,16 +363,13 @@ a {
 /* 로그인 */
 
 .login {
-    background: radial-gradient(circle at right top, #e5892d, #e0652c);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
 }
 
 .login-heading {
     font-family: "Noto Sans Bold", sans-serif;
     font-size: 1.6rem;
-    color: #ff0;
     text-indent: 10px;
 }
 
@@ -388,10 +386,11 @@ a {
     padding: 0;
     margin: 0;
     position: relative;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
 }
 
 .user-pw {
-    background: lime;
     margin-top: 5px;
 }
 
@@ -404,29 +403,55 @@ a {
     right: 0;
     padding: 0 5px;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .login-form label {
     display: inline-block;
     width: 5em;
-    background: yellow;
+    cursor: pointer;
 }
 
 .login-form input {
     box-sizing: border-box;
     width: 99px;
     height: 22px;
-    border: 1px solid #aaa;
     padding: 1px 1px 1px 5px;
 }
 
 .member {
+    padding: 0 10px 10px 10px;
     display: flex;
     background: white;
     border-radius: 0 0 5px 5px;
     list-style-type: none;
     justify-content: space-between;
     padding: 0 5px 10px 10px;
+    font-size: 1.3rem;
+}
+
+
+/*플로트이슈를 해결하기위한 clearfix*/
+
+.member::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-user::before,
+.icon-right-open::before {
+    color: red;
+}
+
+.join {
+    background: yellow;
+    float: left;
+}
+
+.find {
+    background: pink;
+    float: right;
 }
 
 .slogan {

@@ -1,0 +1,29 @@
+dl태그안에는 dd dt 요소만 들어간다
+
+dd : description dt:term 
+
+
+
+내가 ul이용해서 작성해본거
+ <div class="term">
+                    <h2 class="term-heading">웹관련용어</h2>
+                    <ul class="term-list">
+                        <li class="term-list-subject">
+                            <a href="">웹 관련 용어</a>
+                        </li>
+                        <li class="term-list-thumbnail">
+                            <a href="">웹표준 이란?</a>
+                        </li>
+                        <li class="term-list-brief">
+                            <a href="">W3C 단체에서 규정한...</a>
+                        </li>
+                    </ul>
+                </div>
+
+------------------------------
+code ~/.bashrc => alias 설정
+
+alias cls='clear'
+alias gs='git status'
+function gc(){git commit -m "$1"}       이런식으로 설정
+

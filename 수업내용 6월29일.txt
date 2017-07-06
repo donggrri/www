@@ -1,0 +1,36 @@
+html:5 + tab 키
+F12번 눌러서 firebug눌러서 여러가지 확인가능
+
+pos:a =>자리를 차지하지 않는다. 원래있던자리에 겹쳐서 자리를 차지함
+	글자수만큼 자리를 차지
+
+pos:r => 원래있던자리에서부터 이동한다.
+
+overflow: hidden; => float 사용하는 부모에서 설정 잃어버린 높이를 되찾음 
+			pos를 사용하면 범위를 넘어서면 짤린다
+
+
+  .box::after {
+            content: "null";
+            background: lime;
+            display: block;
+            clear: both;
+        }
+가상요소 선택자 float이슈를 해결할수있다
+
+
+js
+children = 자식 parent=부모 siblings=형제 / find("클래스이름")
+$fucntion(){} 
+
+tab이 머무를수 있는것 -> <a> tabindex 링크이거나 탭인덱스
+
+
+
+*텍스트 애니메이션: 어떤변화를 주고싶은지 
+animation => 시나리오를 먼저 짜야함. 제목필요 text-ani 
+		글자크기 변화시키기(12px-24px)- 투명도변화(0.2~1) 
+		font-size: 글자크기,opacity : 투명도
+		글자이동 (왼쪽상단 -> 오른쪽 하단 x:40px y:75px 으로) 
+		position:absolute 아니면 margin,padding 이용
+transition = > 마우스커서 올리면 스르륵 내려가는거,transform

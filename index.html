@@ -144,31 +144,17 @@
             </div>
             <div class="group group2">
                 <div class="search">
-                    <h2 class="group2-heading">
-                        자료검색
-                        <input type="text" id="group2-heading" required placeholder="">
+                    <h2 class="search-heading.hidden">
+                        <form action="javascript:alert('검색이 완료되었습니다');" class="search-form">
+                            <fieldset>
+                                <legend> 검색폼 </legend> <label for="search">자료검색</label>
+                                <input type="search" id="search" class="keyword" required placeholder="검색어를입력하세요"> <button type="submit" class="btn-search">검색</button>
+                            </fieldset>
 
-                        <button type="search" class="btn-searching">검색</button>
+                        </form>
                     </h2>
 
-                    <fieldset>
-                        <legend> info alert </legend>
-                        <div class="infomation">
-                            <button type="information" class="btn-a">공지사항</button>
-                            <button type="information" class="btn-f">자료실</button>
 
-                            <label for="information">공지사항
-                            <li class="idw1">idw1</li>
-                            </label>
-                        </div>
-                        <div class="warehouse">
-                            <label for="warehouse">자료실</label>
-                        </div>
-
-                        <div class="more">
-                            <label for="more">더보기</label>
-                        </div>
-                    </fieldset>
                 </div>
             </div>
             <div class="group group3">콘텐츠컬럼3</div>
